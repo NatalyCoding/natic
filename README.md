@@ -1,1 +1,1 @@
-# NATIC - Persobnal ICO Project
+# NATIC - Personal ICO Project
