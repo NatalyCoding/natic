@@ -20,13 +20,13 @@ contract ICO {
         bonusEnds = now + 2 weeks;
         icoEnds = now + 8 weeks;
         icoStarts = now;
-        allTokens = 1000;
+        allTokens = 1000000000000000000 * 1000;  //1eth = 1000 NATIC
         admin = (msg.sender);
         balances[msg.sender] = allTokens;
     }
     
     function buyTokens() public payable {
-        uint tokens = msg.value;
+        uint tokens = msg.value * 1000;
         balances[msg.sender] = balances[msg.sender] + tokens;
         allTokens = allTokens + tokens;
     }
