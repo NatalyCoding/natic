@@ -35,5 +35,14 @@ contract ICO {
         return allTokens;
     }
     
+     function myBalance() public constant returns(uint) {
+        return(balances[msg.sender]);
+    }
+    
+    function myAddress() public constant returns(address) {
+        address myAdr = msg.sender;
+        return myAdr;
+    }
+    
 }
 
