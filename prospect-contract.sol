@@ -30,5 +30,10 @@ contract ICO {
         balances[msg.sender] = balances[msg.sender] + tokens;
         allTokens = allTokens + tokens;
     }
+    
+    function totalSupply() public constant returns(uint) {
+        return allTokens;
+    }
+    
 }
 
